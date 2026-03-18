@@ -1,8 +1,4 @@
-from sentence_transformers import SentenceTransformer
-import numpy as np
-
-# Load model
-model = SentenceTransformer('all-MiniLM-L6-v2')
+import streamlit as st
 
 # Sample resumes
 resumes = [
@@ -11,19 +7,23 @@ resumes = [
     "Python developer with AI and Machine Learning knowledge"
 ]
 
-# Convert resumes to embeddings
-resume_embeddings = model.encode(resumes)
+st.title("AI Resume Search 🔍")
 
-# Search query
-query = input("Enter your search: ")
+query = st.text_input("Enter your search:")
 
-query_embedding = model.encode([query])
-
-# Compare similarity
-scores = np.dot(resume_embeddings, query_embedding.T)
-
-# Get best match
-best_match = np.argmax(scores)
-
-print("\nBest Match Resume:")
-print(resumes[best_match])
+if st.button("Search"):
+    if query:
+        # simple matching logic
+        best_match = None
+        for resume in resumes:
+            if query.lower() in resume.lower():
+                best_match = resume
+                break
+        
+        if best_match:
+            st.subheader("Best Match Resume:")
+            st.write(best_match)
+        else:
+            st.write("No exact match found")
+    else:
+        st.write("Enter something")
