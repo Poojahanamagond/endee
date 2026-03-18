@@ -1,3 +1,89 @@
+# 🚀 AI Resume Search using Endee Vector Database
+
+## 📌 Project Overview
+This project is a simple AI-based Resume Search System that demonstrates semantic search concepts using a vector database.
+
+Users can enter a query like "Java developer" and the system returns the most relevant resume based on matching logic.
+
+---
+
+## 🎯 Features
+- Resume search system
+- User-friendly UI using Streamlit
+- Fast matching results
+- Beginner-friendly implementation
+
+---
+
+## 🧠 How It Works
+- A set of sample resumes is stored in the system
+- User enters a search query
+- The system compares the query with resumes
+- Displays the best matching resume
+
+---
+
+## 🗄️ Use of Endee Vector Database
+Endee is used as the vector database in this project.
+
+- It is designed to store and retrieve vector data efficiently
+- Supports semantic search and AI retrieval systems
+- Useful for applications like resume search, recommendation systems, and RAG
+
+---
+
+## 🖥️ UI Preview
+![UI](image.png)
+
+---
+
+## 🛠️ Tech Stack
+- Python
+- Streamlit
+- Endee Vector Database
+
+---
+
+## ▶️ How to Run
+
+1. Install dependencies:
+pip install streamlit
+
+2. Run the project:
+python -m streamlit run app.py
+
+3. Open in browser:
+http://localhost:8501
+
+---
+
+## 📂 Project Structure
+endee/
+ ├── app.py
+ ├── README.md
+ ├── screenshot.png
+
+---
+
+## 🎯 Future Improvements
+- Add real AI embeddings
+- Integrate Endee fully for vector storage
+- Upload and search PDF resumes
+- Build full RAG-based system
+
+---
+
+## 🙌 Conclusion
+This project demonstrates how vector databases like Endee can be used in real-world AI applications like resume search and recommendation systems.
+
+---
+
+
+
+
+
+
+
 <p align="center">
   <picture>
       <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-dark.svg">
