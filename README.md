@@ -1,4 +1,4 @@
-<img width="1919" height="1079" alt="Screenshot 2026-03-18 170210" src="https://github.com/user-attachments/assets/6dc6a6c8-984b-48d5-a74f-53d9ce5939a9" /># 🚀 AI Resume Search using Endee Vector Database
+# 🚀 AI Resume Search using Endee Vector Database
 
 ## 📌 Project Overview
 This project is a simple AI-based Resume Search System that demonstrates semantic search concepts using a vector database.
@@ -34,6 +34,7 @@ Endee is used as the vector database in this project.
 
 ## 🖥️ UI Preview
 ![UI](image.png)
+<img width="1919" height="1079" alt="Screenshot 2026-03-18 170210" src="https://github.com/user-attachments/assets/6dc6a6c8-984b-48d5-a74f-53d9ce5939a9" />
 
 ---
 
